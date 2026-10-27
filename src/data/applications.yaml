@@ -311,3 +311,27 @@ applications:
     eumetnet_member: true
     working_groups:
       - wg-6
+  - id: radar-cleaning
+    title: Cleaning of radar images
+    short: Removal of non-precipitation echoes in radar images.
+    description: |
+      Removal of non-precipitation echoes in radar images destined to TV channels, using a deep neural network.
+    organization_modules:
+      - data-curation
+    domains:
+      - radar
+      - observations
+    organization: Meteo-France
+    eumetnet_member: true
+    working_groups:
+      - wg-1
+    packages:
+      - name: pytorch
+        url: https://pytorch.org/
+        maintained_by_eumetnet: false
+      - name: pyrtorch lightning
+        url: https://lightning.ai/docs/pytorch/stable/
+        maintained_by_eumetnet: false
+      - name: mfai
+        url: https://github.com/meteofrance/mfai
+        maintained_by_eumetnet: true
