@@ -379,3 +379,30 @@ applications:
       - name: mfai
         url: https://github.com/meteofrance/mfai
         maintained_by_eumetnet: true
+  - id: cams-postprocessing
+    title: Postprocessing of astmospheric pollutant ensemble model 
+    short: Postprocessing of CAMS ensemble 
+    description: |
+      ML model to produce an ensemble prediction to replace the current CAMS median ensemble.
+    organization_modules:
+      - post-processing
+    domains:
+      - air quality
+      - postprocessing
+    organization: Meteo-France
+    eumetnet_member: true
+    working_groups:
+      - wg-13
+    packages:
+      - name: pytorch
+        url: https://pytorch.org/
+        maintained_by_eumetnet: false
+      - name: pytorch lightning
+        url: https://lightning.ai/docs/pytorch/stable/
+        maintained_by_eumetnet: false
+      - name: mfai
+        url: https://github.com/meteofrance/mfai
+        maintained_by_eumetnet: true
+      - name: cams-dl-ensemble
+        url: https://github.com/meteofrance/cams-dl-ensemble
+        maintained_by_eumetnet: true
