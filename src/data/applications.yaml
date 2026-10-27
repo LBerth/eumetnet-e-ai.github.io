@@ -277,7 +277,7 @@ applications:
     description: |
       Estimation of precipitation (mm/h) from 2 geostationnary infrared images (10.8 and 6.2 um), using a deep neural network.
     organization_modules:
-      - data-curation
+      - post-processing
     domains:
       - precipitation
       - satellite
@@ -354,3 +354,28 @@ applications:
       - name: darts
         url: https://unit8co.github.io/darts/
         maintained_by_eumetnet: false
+  - id: sargassum-detection
+    title: Detection of Sargassum
+    short: Detection of Sargassum on satellite images.
+    description: |
+      Detection of Sargassum algae on satellite images, using a deep neural network.
+    organization_modules:
+      - post-processing
+    domains:
+      - sargassum
+      - satellite
+      - observations
+    organization: Meteo-France
+    eumetnet_member: true
+    working_groups:
+      - wg-13
+    packages:
+      - name: pytorch
+        url: https://pytorch.org/
+        maintained_by_eumetnet: false
+      - name: pytorch lightning
+        url: https://lightning.ai/docs/pytorch/stable/
+        maintained_by_eumetnet: false
+      - name: mfai
+        url: https://github.com/meteofrance/mfai
+        maintained_by_eumetnet: true
