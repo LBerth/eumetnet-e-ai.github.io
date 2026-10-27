@@ -329,9 +329,28 @@ applications:
       - name: pytorch
         url: https://pytorch.org/
         maintained_by_eumetnet: false
-      - name: pyrtorch lightning
+      - name: pytorch lightning
         url: https://lightning.ai/docs/pytorch/stable/
         maintained_by_eumetnet: false
       - name: mfai
         url: https://github.com/meteofrance/mfai
         maintained_by_eumetnet: true
+  - id: airport-visibility
+    title: Nowcasting of visibility near airports
+    short: Nowcasting of visibility near airports, up to 3 hours.
+    description: |
+      Nowcasting of Low Visibility Procedure at Roissy airport, up to 3 hours, using Temporal Fusion Transformers.
+    organization_modules:
+      - modelling
+    domains:
+      - airports
+      - visibility
+      - nowcasting
+    organization: Meteo-France
+    eumetnet_member: true
+    working_groups:
+      - wg-6
+    packages:
+      - name: darts
+        url: https://unit8co.github.io/darts/
+        maintained_by_eumetnet: false
